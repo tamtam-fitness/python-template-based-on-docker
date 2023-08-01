@@ -1,0 +1,7 @@
+FROM python:3.10-alpine
+RUN pip install poetry --without dev
+COPY pyproject.toml poetry.lock ./app/
+WORKDIR /app
+RUN poetry export --without-hashes --output requirements.txt
+RUN pip install -r requirements.txt
+COPY . ./app/
