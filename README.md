@@ -1,6 +1,5 @@
 # python-template-based-on-docker
 
-
 ## Prerequisites
 
 - What can run Docker like Docker Desktop
