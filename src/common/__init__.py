@@ -1,7 +1,8 @@
-import os
-from .logger import init_logger
 import logging
+import os
+
 from .config import read_yaml
+from .logger import init_logger
 
 env = os.environ["ENV"]
 settings = read_yaml(f"{os.getcwd()}/src/common/yaml_configs/{env}.yaml")
