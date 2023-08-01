@@ -2,8 +2,17 @@
 
 ## Prerequisites
 
-- What can run Docker like Docker Desktop
+- Tool to run Docker like Docker Desktop
   - I highly recommend to use [OrbStack](https://github.com/orbstack/orbstack)
+
+## Apply template to your project
+```
+git clone https://github.com/tamtam-fitness/python-template-based-on-docker.git <new-project>
+
+cd <new-project>
+
+rm -rf .git
+```
 
 ## Run Container
 
@@ -12,37 +21,32 @@ To start development, you are supposed to run the following command:
 make setup   
 ```
 
-※ if you want to recreate image
-
-if you want to see the api spec, you can access to `http://localhost:8080/docs`
-
 ## Development Commands
 
-### enter into container
+### Enter into container
 ```bash
 make enter_container
 ```
 
-
-### lint
+### Lint
 
 ```bash 
 make lint
 ```
-### format
+### Format
 
 ```bash 
 make format
 ```
 
-### test
+### Test
 
-if you want to run all tests, you can run the following command:
+If you want to run all tests, you can run the following command:
 ```bash 
 make test
 ```
 
-if you want to run the specific test, you can run the following command:
+If you want to run the specific test, you can run the following command:
 ```bash
 make enter_container
 
